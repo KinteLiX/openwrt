@@ -6,8 +6,8 @@
 #include "qca9563_tplink_deco.dtsi"
 
 / {
-	compatible = "tplink,deco-m4r-v1", "qca,qca9563";
-	model = "TP-Link Deco M4R v1";
+	compatible = "tplink,deco-p9-v1", "qca,qca9563";
+	model = "TP-Link Deco P9 v1";
 };
 
 &partitions {
