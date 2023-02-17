@@ -515,6 +515,18 @@ define Device/tplink_deco-p9-v1
 endef
 TARGET_DEVICES += tplink_deco-p9-v1
 
+define Device/tplink_deco-p9-v2
+  $(Device/tplink-safeloader-uimage)
+  SOC := qca9563
+  IMAGE_SIZE := 13824k
+  DEVICE_MODEL := Deco P9
+  DEVICE_VARIANT := v2
+  DEVICE_PACKAGES := kmod-ath10k-ct ath10k-firmware-qca9888-ct
+  SUPPORTED_DEVICES += deco-p9-v2
+  TPLINK_BOARD_ID := DECO-P9-V1
+endef
+TARGET_DEVICES += tplink_deco-p9-v2
+
 define Device/tplink_deco-s4-v2
   $(Device/tplink-safeloader-uimage)
   SOC := qca9563
